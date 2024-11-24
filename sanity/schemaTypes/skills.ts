@@ -31,7 +31,15 @@ export const skills = defineType({
               name: "level",
               type: "string",
               title: "Proficiency Level",
-              options: { list: ["Beginner", "Intermediate", "Advanced"] },
+              options: {
+                list: [
+                  "Beginner",
+                  "Intermediate",
+                  "Advanced",
+                  "Expert",
+                  "Master",
+                ],
+              },
             },
             {
               name: "experience",
