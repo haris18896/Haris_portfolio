@@ -34,10 +34,15 @@ export const experience = defineType({
         Rule.required().error("Company description is required"),
     }),
     defineField({
-      name: "skill_set",
-      title: "Skills Set",
+      name: "skills",
+      title: "Skills",
       type: "array",
-      of: [{ type: "string" }],
+      of: [
+        {
+          type: "reference",
+          to: [{ type: "skills" }],
+        },
+      ],
       validation: (Rule) =>
         Rule.required().min(1).error("At least one skill is required"),
     }),
@@ -51,8 +56,6 @@ export const experience = defineType({
       name: "current_company",
       title: "Current Company",
       type: "boolean",
-      validation: (Rule) =>
-        Rule.required().error("Current company status is required"),
     }),
     defineField({
       name: "exit_date",
