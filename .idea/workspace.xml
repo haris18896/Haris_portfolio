@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7567c80-1779-48c6-b839-565ecc43383a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sanity/schemaTypes/skills.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sanity/schemaTypes/skills.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
