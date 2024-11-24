@@ -23,13 +23,21 @@ export const skills = defineType({
       name: "level",
       type: "string",
       title: "Proficiency Level",
+      options: {
+        list: [
+          "Beginner",
+          "Novice",
+          "Intermediate",
+          "Competent",
+          "Proficient",
+          "Advanced",
+          "Expert",
+          "Master",
+        ],
+      },
       validation: (Rule) =>
-        Rule.required()
-          .min(1)
-          .max(10)
-          .error("Points must be a number between 1 and 10"),
+        Rule.required().error("Proficiency level is required"),
     }),
-
     defineField({
       name: "experience",
       type: "number",
