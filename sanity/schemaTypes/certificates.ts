@@ -27,5 +27,13 @@ export const certificates = defineType({
       validation: (Rule) =>
         Rule.required().error("Certificate URL is required"),
     }),
+    defineField({
+      name: "image",
+      title: "Image",
+      type: "image",
+      options: {
+        hotspot: true,
+      },
+    }),
   ],
 });
