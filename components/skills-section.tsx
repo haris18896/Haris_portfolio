@@ -11,11 +11,7 @@ interface Skill {
   skill: string;
   level: string;
   experience: number;
-  skill_logo: {
-    asset: {
-      url: string;
-    };
-  };
+  skill_logo: string;
 }
 
 const levelToProgress = {

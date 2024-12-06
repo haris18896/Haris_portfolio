@@ -15,11 +15,7 @@ interface Experience {
   joining_date: string;
   current_company: boolean;
   exit_date?: string;
-  company_logo: {
-    asset: {
-      url: string;
-    };
-  };
+  company_logo: string;
   skills: Array<{
     skill: string;
   }>;

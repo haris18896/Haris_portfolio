@@ -11,18 +11,13 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import Image from "next/image";
 
 interface Project {
   _id: string;
   project_name: string;
   project_url?: string;
   project_description: string;
-  project_logo: {
-    asset: {
-      url: string;
-    };
-  };
+  project_logo: string;
   skills: Array<{
     skill: string;
   }>;

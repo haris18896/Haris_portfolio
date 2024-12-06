@@ -12,11 +12,7 @@ interface Academic {
   qualification: string;
   start: string;
   end: string;
-  image: {
-    asset: {
-      url: string;
-    };
-  };
+  image: string;
 }
 
 export default function AcademicsSection() {
