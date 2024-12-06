@@ -1,9 +1,21 @@
+import Navbar from "@/components/navbar";
+import IntroSection from "@/components/intro-section";
+import SkillsSection from "@/components/skills-section";
+import AcademicsSection from "@/components/academics-section";
+import ExperienceSection from "@/components/experience-section";
+import ProjectsSection from "@/components/projects-section";
+import GithubSection from "@/components/github-section";
+
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <h1 className={'text-3xl'}>Haris Ahmad Khan</h1>
-      </main>
-    </div>
+    <main className="min-h-screen bg-white dark:bg-gray-900">
+      <Navbar />
+      <IntroSection />
+      <SkillsSection />
+      <AcademicsSection />
+      <ExperienceSection />
+      <ProjectsSection />
+      <GithubSection />
+    </main>
   );
 }
