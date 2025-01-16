@@ -46,7 +46,7 @@ export default function IntroSection() {
                 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6"
                 variants={itemVariants}
               >
-                Hi, I'm Haris Ahmad Khan
+                Hi, I&apos;m Haris Ahmad Khan
               </motion.h1>
               <motion.p
                 className="text-xl text-gray-600 dark:text-gray-300 mb-8"
